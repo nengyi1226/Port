@@ -4,7 +4,7 @@ Set-ExecutionPolicy RemoteSigned -Force
 
 $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
-# Define the ports that were blocked (including port 136)
+# Port to block
 $ports = @('135', '136', '137', '138', '139', '145', '161', '162', '389','445', '636', '3268', '3269', '3389')
 
 # Start unblocking ports
@@ -33,7 +33,7 @@ foreach ($port in $ports) {
         continue
     }
 
-    # remove inbound and outbound rules for TCP and UDP
+    # Port to block
     foreach ($protocol in @('TCP', 'UDP')) {
         $inboundRuleName = "Block Inbound Port $port ($protocol)"
         $outboundRuleName = "Block Outbound Port $port ($protocol)"
