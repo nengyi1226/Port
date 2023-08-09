@@ -5,7 +5,7 @@ Set-ExecutionPolicy RemoteSigned -Force
 $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
 # Define the port to block
-$ports = @('135', '137', '138', '139', '145', '161', '162', '389','445', '636', '3268', '3269', '3389')
+$ports = @('135', '136','137', '138', '139', '145', '161', '162', '389','445', '636', '3268', '3269', '3389')
 
 # Start blocking ports
 Write-Host "Starting to block ports..."
