@@ -1,4 +1,5 @@
 # Port
+![20230810193819](https://github.com/nengyi1226/Port/assets/124417045/f5891308-2288-41b2-ad08-575ef9d7de6b)
 Close the remote port
 1. 在桌面桌下角搜索框里输入powershell,以管理员身份运行
 2. 把powershell切换到脚本所在的目录
